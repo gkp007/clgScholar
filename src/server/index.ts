@@ -2,10 +2,11 @@ require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
-const { College } = require("./server/models/College");
-const { Submission } = require("./server/models/Submission");
-const { InterestForm } = require("./server/models/InterestForm");
-const { ContactUsForm } = require("./server/models/ContactUsForm");
+const { College } = require("./models/College");
+const { Submission } = require("./models/Submission");
+const { InterestForm } = require("./models/InterestForm");
+const { ContactUsForm } = require("./models/ContactUsForm");
+
 import type { Request, Response, NextFunction } from "express";
 
 const app = express();
